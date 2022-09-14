@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <title>My BookList</title>
+  </head>
+  <body>
+    <div class="container bg-purple-700 mx-auto p-3 md:bg-rose-800">
+      <h1 class="d-flex text-3xl text-center">
+        <i class="fas fa-book-open text-blue-500"></i> My<span
+          class="text-blue-500"
+          >Book</span
+        >List
+      </h1>
+
+      <form id="book-form">
+        <div class="w-1/2 mx-auto p-2">
+          <label for="title " class="block text-lg text-black font-bold"
+            >Title</label
+          >
+          <input
+            type="text"
+            id="title"
+            class="block border border-solid border-blue-800 w-full"
+          />
+        </div>
+        <div class="w-1/2 mx-auto p-2">
+          <label for="title " class="block text-lg text-black font-bold"
+            >Author</label
+          >
+          <input
+            type="text"
+            id="author"
+            class="block border border-solid border-blue-800 w-full"
+          />
+        </div>
+        <div class="w-1/2 mx-auto p-2">
+          <label for="title " class="block text-lg text-black font-bold"
+            >ISBN#</label
+          >
+          <input
+            type="text"
+            id="isbn"
+            class="block border border-solid border-blue-800 w-full"
+          />
+        </div>
+        <div class="text-center">
+          <button
+            class="text-white px-6 py-2 w-1/3 mt-items-center bg-blue-600 mx-auto"
+            value="submit"
+          >
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+    <table class="mt-12 mx-auto w-full   md:w-1/2  ">
+      <thead>
+        <tr class="text-left">
+          <th>Title</th>
+          <th>Author</th>
+          <th>ISBN#</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="book-List"></tbody>
+    </table>
+    <script src="script.js"></script>
+  </body>
+</html>
