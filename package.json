@@ -1,0 +1,15 @@
+{
+  "name": "js-pratice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "build": "tailwind -i ./style.css -o  ./css/main.css ",
+    "watch": "tailwind -i ./style.css -o  ./css/main.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.1.8"
+  }
+}
